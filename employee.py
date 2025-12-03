@@ -1,4 +1,4 @@
-def employee_details(name, emp_id, department, salary):
+def employee_details(name,emp_id,department,salary):
     result=(
         f"Employee Name:{name}\n"
         f"Employee ID:{emp_id}\n"
