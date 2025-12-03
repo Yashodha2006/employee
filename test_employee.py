@@ -1,15 +1,10 @@
-def employee_details(name, emp_id, department, salary):
-    return {
-        "Employee Name": name,
-        "Employee ID": emp_id,
-        "Department": department,
-        "Salary": salary
+from employee import employee_details
+
+def test_employee_details():
+    expected_output = {
+        "Employee Name": "Alice",
+        "Employee ID": "E1001",
+        "Department": "IT",
+        "Salary": 55000
     }
-
-if __name__ == "__main__":
-    name = "Alice"
-    emp_id = "E1001"
-    department = "IT"
-    salary = 55000
-
-    print(employee_details(name, emp_id, department, salary))
+    assert employee_details("Alice", "E1001", "IT", 55000) == expected_output
